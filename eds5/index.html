@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Movie offer</title>
+<link href="css/font/stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 8]><script src="css/html5shiv.js"></script><![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script>
+	document.createElement('header');
+	document.createElement('section');
+	document.createElement('article');
+	document.createElement('aside');
+	document.createElement('nav');
+	document.createElement('footer'); 
+</script>
+<!--[if IE ]>  
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+<![endif]-->
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="line">
+    <header>
+      <div class="logo"><img alt="" src="images/global_corporate_payment.png"></div>
+      <div class="american_express"><img alt="" src="images/american_express.png"></div>
+    </header>
+    <div class="clear"></div>
+    <div class="container-topmenu inneritem hidden">
+      <div class="clear"></div>
+      <div class="pull-left"> 
+        <!--  <div class="filter-favourite pull-left fav"><input type="button" class="button-fav favbtn"></div><br>
+                         <div class="pull-left">Add your favourite outlets to avoid searching them again</div> --> 
+      </div>
+      <form id="city-chagne-form" class="pull-right city-div">
+        <div class="display">Hyderabad</div>
+        <div class="filter">
+          <select id="change_city">
+            <option value="">Choose your City</option>
+                       <!--<option value="new delhi">New Delhi</option><option value="mumbai">Mumbai</option><option value="chennai">Chennai</option><option value="kolkata">Kolkata</option><option value="bengaluru">Bengaluru</option><option value="pune">Pune</option><option value="hyderabad">Hyderabad</option><option value="gurgaon">Gurgaon</option><option value="noida">Noida</option><option value="-------------">-------------</option><option value="agartala">Agartala</option><option value="agra">Agra</option><option value="ahmedabad">Ahmedabad</option><option value="ahmednagar">Ahmednagar</option><option value="ajmer">Ajmer</option><option value="aligarh">Aligarh</option><option value="allahabad">Allahabad</option><option value="amaravati">Amaravati</option><option value="ambala">Ambala</option><option value="amritsar">Amritsar</option><option value="amroha">Amroha</option><option value="anand">Anand</option><option value="ankleshwar">Ankleshwar</option><option value="arasikere">Arasikere</option><option value="asansol">Asansol</option><option value="aurangabad">Aurangabad</option><option value="balachur">Balachur</option><option value="banaswadi">Banaswadi</option><option value="bantala">Bantala</option><option value="bareilly">Bareilly</option><option value="baroadez">Baroadez</option><option value="baroda">Baroda</option><option value="bathinda">Bathinda</option><option value="bawal">Bawal</option><option value="beas">Beas</option><option value="belgaum">Belgaum</option><option value="benaulim">Benaulim</option><option value="bengaluru">Bengaluru</option><option value="bharuch">Bharuch</option><option value="bhatinda">Bhatinda</option><option value="bhavnagar">Bhavnagar</option><option value="bhilai">Bhilai</option><option value="bhiwadi">Bhiwadi</option><option value="bhopal">Bhopal</option><option value="bhubaneswar">Bhubaneswar</option><option value="bilaspur">Bilaspur</option><option value="buroadwan">Buroadwan</option><option value="calangute">Calangute</option><option value="calicut">Calicut</option><option value="chandigarh">Chandigarh</option><option value="chandragiri">Chandragiri</option><option value="channapatana">Channapatana</option><option value="chengalpet">Chengalpet</option><option value="chennai">Chennai</option><option value="chittor">Chittor</option><option value="cochin">Cochin</option><option value="coimbatore">Coimbatore</option><option value="coonoor">Coonoor</option><option value="cuttack">Cuttack</option><option value="darjeeling">Darjeeling</option><option value="dasuya">Dasuya</option><option value="davangere">Davangere</option><option value="dehradun">Dehradun</option><option value="dhanbad">Dhanbad</option><option value="durgapur">Durgapur</option><option value="erode">Erode</option><option value="faridabad">Faridabad</option><option value="gajraula">Gajraula</option><option value="gandhinagar">Gandhinagar</option><option value="gangtok">Gangtok</option><option value="ghaziabad">Ghaziabad</option><option value="goa">Goa</option><option value="greater mumbai">Greater Mumbai</option><option value="greater noida">Greater Noida</option><option value="gundulpet">Gundulpet</option><option value="guntur">Guntur</option><option value="gurgaon">Gurgaon</option><option value="guwahati">Guwahati</option><option value="gwalior">Gwalior</option><option value="haldwani">Haldwani</option><option value="haridwar">Haridwar</option><option value="hooghly">Hooghly</option><option value="hoshiarpur">Hoshiarpur</option><option value="hosur">Hosur</option><option value="howrah">Howrah</option><option value="hubli">Hubli</option><option value="hyderabad">Hyderabad</option><option value="indore">Indore</option><option value="jabalpur">Jabalpur</option><option value="jaipur">Jaipur</option><option value="jalandhar">Jalandhar</option><option value="jallandhar">Jallandhar</option><option value="jammu">Jammu</option><option value="jamnagar">Jamnagar</option><option value="jamshedpur">Jamshedpur</option><option value="jodhpur">Jodhpur</option><option value="k.v.rangareddy">K.V.Rangareddy</option><option value="kanchipuram">Kanchipuram</option><option value="kannur">Kannur</option><option value="kanpur">Kanpur</option><option value="karjan">Karjan</option><option value="karnal">Karnal</option><option value="katra">Katra</option><option value="kharagpur">Kharagpur</option><option value="kharar">Kharar</option><option value="kolar">Kolar</option><option value="kolhapur">Kolhapur</option><option value="kolkata">Kolkata</option><option value="kollam">Kollam</option><option value="koluthur">Koluthur</option><option value="kormangla">Kormangla</option><option value="kota">Kota</option><option value="kottayam">Kottayam</option><option value="kurukshetra">Kurukshetra</option><option value="kushalanagar">Kushalanagar</option><option value="lavasa">Lavasa</option><option value="lekkidi">Lekkidi</option><option value="lonavala">Lonavala</option><option value="loni">Loni</option><option value="lucknow">Lucknow</option><option value="ludhiana">Ludhiana</option><option value="macleodganj">Macleodganj</option><option value="maddur">Maddur</option><option value="madurai">Madurai</option><option value="mahabalipuram">Mahabalipuram</option><option value="maharashtra">Maharashtra</option><option value="mahim">Mahim</option><option value="malappuram">Malappuram</option><option value="mandya">Mandya</option><option value="mangalore">Mangalore</option><option value="mangaon">Mangaon</option><option value="manipal">Manipal</option><option value="mathura">Mathura</option><option value="meerut">Meerut</option><option value="memnagar">Memnagar</option><option value="miraj">Miraj</option><option value="moga">Moga</option><option value="mohali">Mohali</option><option value="moradabad">Moradabad</option><option value="mount abu">Mount Abu</option><option value="mumbai">Mumbai</option><option value="muradabad">Muradabad</option><option value="mussorie">Mussorie</option><option value="muthukadu">Muthukadu</option><option value="mysore">Mysore</option><option value="nagpur">Nagpur</option><option value="naika">Naika</option><option value="nainital">Nainital</option><option value="narasapura">Narasapura</option><option value="nasik">Nasik</option><option value="navasri">Navasri</option><option value="navi mumbai">Navi Mumbai</option><option value="navsari">Navsari</option><option value="nawashahr">Nawashahr</option><option value="nellore">Nellore</option><option value="new delhi">New Delhi</option><option value="noida">Noida</option><option value="palakkad">Palakkad</option><option value="palampur">Palampur</option><option value="palwal">Palwal</option><option value="panaji">Panaji</option><option value="panchkula">Panchkula</option><option value="panipat">Panipat</option><option value="panvel">Panvel</option><option value="parganas">Parganas</option><option value="pathankot">Pathankot</option><option value="patiala">Patiala</option><option value="patna">Patna</option><option value="pattom">Pattom</option><option value="phagwara">Phagwara</option><option value="pondicherry">Pondicherry</option><option value="punchkulla">Punchkulla</option><option value="pune">Pune</option><option value="puri">Puri</option><option value="raigad">Raigad</option><option value="raipur">Raipur</option><option value="rajkot">Rajkot</option><option value="rajpura">Rajpura</option><option value="ranchi">Ranchi</option><option value="rewari">Rewari</option><option value="rishikesh">Rishikesh</option><option value="rohtak">Rohtak</option><option value="roorkee">Roorkee</option><option value="rourkela">Rourkela</option><option value="rudrapur">Rudrapur</option><option value="rupangr">Rupangr</option><option value="saharanpur">Saharanpur</option><option value="sambalpur">Sambalpur</option><option value="sangamner">Sangamner</option><option value="sangli">Sangli</option><option value="satara">Satara</option><option value="secunderabad">Secunderabad</option><option value="shillong">Shillong</option><option value="shimla">Shimla</option><option value="shivkhedapur">Shivkhedapur</option><option value="siliguri">Siliguri</option><option value="solan">Solan</option><option value="sonipat">Sonipat</option><option value="srinagar">Srinagar</option><option value="surat">Surat</option><option value="suryapet">Suryapet</option><option value="tamil nadu">Tamil Nadu</option><option value="tanda">Tanda</option><option value="thane">Thane</option><option value="thirupur">Thirupur</option><option value="thiruvananthapuram">Thiruvananthapuram</option><option value="thrissur">Thrissur</option><option value="tiruchirappalli">Tiruchirappalli</option><option value="tirupathi">Tirupathi</option><option value="tirupur">Tirupur</option><option value="tiruvananthapuram">Tiruvananthapuram</option><option value="trichy">Trichy</option><option value="trissur">Trissur</option><option value="trivandrum">Trivandrum</option><option value="tumkur">Tumkur</option><option value="udaipur">Udaipur</option><option value="vadodara">Vadodara</option><option value="vapi">Vapi</option><option value="varanasi">Varanasi</option><option value="vellore">Vellore</option><option value="vijayawada">Vijayawada</option><option value="vishakapatnam">Vishakapatnam</option><option value="vizag">Vizag</option><option value="warangal">Warangal</option><option value="yamuna nagar">Yamuna Nagar</option><option value="yermal">Yermal</option><option value="zirakhpur">Zirakhpur</option>-->
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="bengaluru">Bengaluru</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="delhi">Delhi/NCR</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="pune">Pune</option>
+                            <option value="surat">Surat</option>
+                            <option value="">--------------------------</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="bihar">Bihar</option>
+                            <option value="chandigarh">Chandigarh</option>
+                            <option value="chhattisgarh">Chhattisgarh</option>
+                            <option value="goa">Goa</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="haryana">Haryana</option>
+                            <option value="jammu">Jammu & Kashmir</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="madhya">Madhya Pradesh</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="orissa">Orissa</option>
+                            <option value="pondicherry">Pondicherry</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="rajasthan">Rajasthan</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="uttar">Uttar Pradesh</option>
+                            <option value="uttaranchal">Uttaranchal</option>
+                            <option value="bengal">West Bengal</option>
+                            <!-- <option value="others">Others</option> -->
+                            </select>
+        </div>
+      </form>
+    </div>
+    <div class="clear"></div>
+    <div class="movie">
+      <div class="movie_home"> <img alt="" src="images/monthly_movies.png" class="animated"></div>
+      <div class="homeitem">
+        <h2>Choose to spend at over 14,000 <br />
+          listed merchants.</h2>
+      </div>
+    </div>
+    <div class="contain">
+      <div class="homeitem">
+        <h1>Enjoy free movies every month</h1>
+        <h3>with the American Express<sup>&reg;</sup> Corporate Card.</h3>
+        <div class="clear"></div>
+        <ul class="ticket_and_movie">
+          <li><img alt="" src="images/cinema.png" class="tick_movi_icon">
+            <h4>Get free Movie Vouchers </h4>
+            <ul class="bull_copy">
+              <li>Spend on any <span class="bold"> 2</span> categories mentioned below and get free Movie Voucher worth Rs. 700</li>
+              <li>Spend on <span class="bold"> 3</span>  or more categories and get 2 Movie Vouchers worth Rs. 700 each.</li>
+              <li style="list-style:none; font-size:10px; margin-top:15px;">Offer valid till December 31, 2014</li>
+            </ul>
+            
+          </li>
+          <li style="margin:0px;"> <img alt="" src="images/indiGo.png" class="tick_movi_icon">
+            <h4>Get Indigo Vouchers worth Rs.10,000</h4>
+            <ul class="bull_copy">
+              	<li>For first 50 Cardmembers who spend Rs. 2 lacs or above across the below mentioned categories.</li>
+                <li style="list-style:none; font-size:10px; margin-top:15px;"><div style="height:48px"></div>Offer valid till July 31, 2014</li>
+             
+            </ul>
+          </li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="categories inneritem hidden">Choose to spend at over 14,000 listed merchants.</div>
+      <nav class="menu">
+        <ul>
+          <li id ="supply" ><img alt="" rel="supply" src="images/office_supplies.png"></li>
+          <li id ="courier" ><img alt="" rel="courier" src="images/courier.png"></li>
+          <li id ="communication" ><img alt="" rel="communication" src="images/communication.png"></li>
+          <li id ="utility" ><img alt="" rel="utility" src="images/utility.png"></li>
+          <li id ="dining" ><img alt="" rel="dining" src="images/dining.png"></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clear"></div>
+    <div class="tottel_list inneritem hidden">
+      <div class="container base" style="min-height:800px">
+        <div class="row">
+          <div class="col-sm-8 ">
+            <div class="filters">
+              <form action="">
+                <span class="fil">Filter by: <em></em></span>
+                <div class="filter-category">
+                  <select class="a-filter">
+                    <option value="supply">Supermarkets & Office Supplies</option>
+                    <option value="courier">Courier & Shipping</option>
+                    <option value="communication">Communication</option>
+                    <option value="utility">Utilities & Insurance</option>
+                    <option value="dining">Dining</option>
+                  </select>
+                </div>
+                <div class="filter-city">
+                  <select class="a-filter">
+                    <option value="">City</option>
+                    <option value="new delhi">New Delhi</option>
+                    <option selected="selected" value="mumbai">Mumbai</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="pune">Pune</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="noida">Noida</option>
+                    <option value="-------------">-------------</option>
+                    <option value="agartala">Agartala</option>
+                    <option value="agra">Agra</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="ahmednagar">Ahmednagar</option>
+                    <option value="ajmer">Ajmer</option>
+                    <option value="aligarh">Aligarh</option>
+                    <option value="allahabad">Allahabad</option>
+                    <option value="amaravati">Amaravati</option>
+                    <option value="ambala">Ambala</option>
+                    <option value="amritsar">Amritsar</option>
+                    <option value="amroha">Amroha</option>
+                    <option value="anand">Anand</option>
+                    <option value="ankleshwar">Ankleshwar</option>
+                    <option value="arasikere">Arasikere</option>
+                    <option value="asansol">Asansol</option>
+                    <option value="aurangabad">Aurangabad</option>
+                    <option value="balachur">Balachur</option>
+                    <option value="banaswadi">Banaswadi</option>
+                    <option value="bantala">Bantala</option>
+                    <option value="bareilly">Bareilly</option>
+                    <option value="baroadez">Baroadez</option>
+                    <option value="baroda">Baroda</option>
+                    <option value="bathinda">Bathinda</option>
+                    <option value="bawal">Bawal</option>
+                    <option value="beas">Beas</option>
+                    <option value="belgaum">Belgaum</option>
+                    <option value="benaulim">Benaulim</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="bharuch">Bharuch</option>
+                    <option value="bhatinda">Bhatinda</option>
+                    <option value="bhavnagar">Bhavnagar</option>
+                    <option value="bhilai">Bhilai</option>
+                    <option value="bhiwadi">Bhiwadi</option>
+                    <option value="bhopal">Bhopal</option>
+                    <option value="bhubaneswar">Bhubaneswar</option>
+                    <option value="bilaspur">Bilaspur</option>
+                    <option value="buroadwan">Buroadwan</option>
+                    <option value="calangute">Calangute</option>
+                    <option value="calicut">Calicut</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="chandragiri">Chandragiri</option>
+                    <option value="channapatana">Channapatana</option>
+                    <option value="chengalpet">Chengalpet</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="chittor">Chittor</option>
+                    <option value="cochin">Cochin</option>
+                    <option value="coimbatore">Coimbatore</option>
+                    <option value="coonoor">Coonoor</option>
+                    <option value="cuttack">Cuttack</option>
+                    <option value="darjeeling">Darjeeling</option>
+                    <option value="dasuya">Dasuya</option>
+                    <option value="davangere">Davangere</option>
+                    <option value="dehradun">Dehradun</option>
+                    <option value="dhanbad">Dhanbad</option>
+                    <option value="durgapur">Durgapur</option>
+                    <option value="erode">Erode</option>
+                    <option value="faridabad">Faridabad</option>
+                    <option value="gajraula">Gajraula</option>
+                    <option value="gandhinagar">Gandhinagar</option>
+                    <option value="gangtok">Gangtok</option>
+                    <option value="ghaziabad">Ghaziabad</option>
+                    <option value="goa">Goa</option>
+                    <option value="greater mumbai">Greater Mumbai</option>
+                    <option value="greater noida">Greater Noida</option>
+                    <option value="gundulpet">Gundulpet</option>
+                    <option value="guntur">Guntur</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="guwahati">Guwahati</option>
+                    <option value="gwalior">Gwalior</option>
+                    <option value="haldwani">Haldwani</option>
+                    <option value="haridwar">Haridwar</option>
+                    <option value="hooghly">Hooghly</option>
+                    <option value="hoshiarpur">Hoshiarpur</option>
+                    <option value="hosur">Hosur</option>
+                    <option value="howrah">Howrah</option>
+                    <option value="hubli">Hubli</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="indore">Indore</option>
+                    <option value="jabalpur">Jabalpur</option>
+                    <option value="jaipur">Jaipur</option>
+                    <option value="jalandhar">Jalandhar</option>
+                    <option value="jallandhar">Jallandhar</option>
+                    <option value="jammu">Jammu</option>
+                    <option value="jamnagar">Jamnagar</option>
+                    <option value="jamshedpur">Jamshedpur</option>
+                    <option value="jodhpur">Jodhpur</option>
+                    <option value="k.v.rangareddy">K.V.Rangareddy</option>
+                    <option value="kanchipuram">Kanchipuram</option>
+                    <option value="kannur">Kannur</option>
+                    <option value="kanpur">Kanpur</option>
+                    <option value="karjan">Karjan</option>
+                    <option value="karnal">Karnal</option>
+                    <option value="katra">Katra</option>
+                    <option value="kharagpur">Kharagpur</option>
+                    <option value="kharar">Kharar</option>
+                    <option value="kolar">Kolar</option>
+                    <option value="kolhapur">Kolhapur</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="kollam">Kollam</option>
+                    <option value="koluthur">Koluthur</option>
+                    <option value="kormangla">Kormangla</option>
+                    <option value="kota">Kota</option>
+                    <option value="kottayam">Kottayam</option>
+                    <option value="kurukshetra">Kurukshetra</option>
+                    <option value="kushalanagar">Kushalanagar</option>
+                    <option value="lavasa">Lavasa</option>
+                    <option value="lekkidi">Lekkidi</option>
+                    <option value="lonavala">Lonavala</option>
+                    <option value="loni">Loni</option>
+                    <option value="lucknow">Lucknow</option>
+                    <option value="ludhiana">Ludhiana</option>
+                    <option value="macleodganj">Macleodganj</option>
+                    <option value="maddur">Maddur</option>
+                    <option value="madurai">Madurai</option>
+                    <option value="mahabalipuram">Mahabalipuram</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="mahim">Mahim</option>
+                    <option value="malappuram">Malappuram</option>
+                    <option value="mandya">Mandya</option>
+                    <option value="mangalore">Mangalore</option>
+                    <option value="mangaon">Mangaon</option>
+                    <option value="manipal">Manipal</option>
+                    <option value="mathura">Mathura</option>
+                    <option value="meerut">Meerut</option>
+                    <option value="memnagar">Memnagar</option>
+                    <option value="miraj">Miraj</option>
+                    <option value="moga">Moga</option>
+                    <option value="mohali">Mohali</option>
+                    <option value="moradabad">Moradabad</option>
+                    <option value="mount abu">Mount Abu</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="muradabad">Muradabad</option>
+                    <option value="mussorie">Mussorie</option>
+                    <option value="muthukadu">Muthukadu</option>
+                    <option value="mysore">Mysore</option>
+                    <option value="nagpur">Nagpur</option>
+                    <option value="naika">Naika</option>
+                    <option value="nainital">Nainital</option>
+                    <option value="narasapura">Narasapura</option>
+                    <option value="nasik">Nasik</option>
+                    <option value="navasri">Navasri</option>
+                    <option value="navi mumbai">Navi Mumbai</option>
+                    <option value="navsari">Navsari</option>
+                    <option value="nawashahr">Nawashahr</option>
+                    <option value="nellore">Nellore</option>
+                    <option value="new delhi">New Delhi</option>
+                    <option value="noida">Noida</option>
+                    <option value="palakkad">Palakkad</option>
+                    <option value="palampur">Palampur</option>
+                    <option value="palwal">Palwal</option>
+                    <option value="panaji">Panaji</option>
+                    <option value="panchkula">Panchkula</option>
+                    <option value="panipat">Panipat</option>
+                    <option value="panvel">Panvel</option>
+                    <option value="parganas">Parganas</option>
+                    <option value="pathankot">Pathankot</option>
+                    <option value="patiala">Patiala</option>
+                    <option value="patna">Patna</option>
+                    <option value="pattom">Pattom</option>
+                    <option value="phagwara">Phagwara</option>
+                    <option value="pondicherry">Pondicherry</option>
+                    <option value="punchkulla">Punchkulla</option>
+                    <option value="pune">Pune</option>
+                    <option value="puri">Puri</option>
+                    <option value="raigad">Raigad</option>
+                    <option value="raipur">Raipur</option>
+                    <option value="rajkot">Rajkot</option>
+                    <option value="rajpura">Rajpura</option>
+                    <option value="ranchi">Ranchi</option>
+                    <option value="rewari">Rewari</option>
+                    <option value="rishikesh">Rishikesh</option>
+                    <option value="rohtak">Rohtak</option>
+                    <option value="roorkee">Roorkee</option>
+                    <option value="rourkela">Rourkela</option>
+                    <option value="rudrapur">Rudrapur</option>
+                    <option value="rupangr">Rupangr</option>
+                    <option value="saharanpur">Saharanpur</option>
+                    <option value="sambalpur">Sambalpur</option>
+                    <option value="sangamner">Sangamner</option>
+                    <option value="sangli">Sangli</option>
+                    <option value="satara">Satara</option>
+                    <option value="secunderabad">Secunderabad</option>
+                    <option value="shillong">Shillong</option>
+                    <option value="shimla">Shimla</option>
+                    <option value="shivkhedapur">Shivkhedapur</option>
+                    <option value="siliguri">Siliguri</option>
+                    <option value="solan">Solan</option>
+                    <option value="sonipat">Sonipat</option>
+                    <option value="srinagar">Srinagar</option>
+                    <option value="surat">Surat</option>
+                    <option value="suryapet">Suryapet</option>
+                    <option value="tamil nadu">Tamil Nadu</option>
+                    <option value="tanda">Tanda</option>
+                    <option value="thane">Thane</option>
+                    <option value="thirupur">Thirupur</option>
+                    <option value="thiruvananthapuram">Thiruvananthapuram</option>
+                    <option value="thrissur">Thrissur</option>
+                    <option value="tiruchirappalli">Tiruchirappalli</option>
+                    <option value="tirupathi">Tirupathi</option>
+                    <option value="tirupur">Tirupur</option>
+                    <option value="tiruvananthapuram">Tiruvananthapuram</option>
+                    <option value="trichy">Trichy</option>
+                    <option value="trissur">Trissur</option>
+                    <option value="trivandrum">Trivandrum</option>
+                    <option value="tumkur">Tumkur</option>
+                    <option value="udaipur">Udaipur</option>
+                    <option value="vadodara">Vadodara</option>
+                    <option value="vapi">Vapi</option>
+                    <option value="varanasi">Varanasi</option>
+                    <option value="vellore">Vellore</option>
+                    <option value="vijayawada">Vijayawada</option>
+                    <option value="vishakapatnam">Vishakapatnam</option>
+                    <option value="vizag">Vizag</option>
+                    <option value="warangal">Warangal</option>
+                    <option value="yamuna nagar">Yamuna Nagar</option>
+                    <option value="yermal">Yermal</option>
+                    <option value="zirakhpur">Zirakhpur</option>
+                  </select>
+                </div>
+                <div class="filter-text">
+                  <input class="input-filter" placeholder="Search" type="text">
+                </div>
+                <div class="filter-button"><img id="submitticket"  src="images/search.jpg" alt="Search" class="submit"  ></div>
+              </form>
+            </div>
+            <div class="filter-data">
+              <h2 class="header-filter">Supermarket &amp; Grocery Stores</h2>
+              <div class="data-filter">
+                <ul>
+                  <li class="dt"><span class="nm heading">A.Mart</span><span class="add">Merchant Centre Shop No 3/4,Plot No 14-D Sector-19,Opposite Apmc Market,Vashi Navi Mumbai 400705</span><span class="e-m mobid">9826862443</span><span class="cat"><span>Category: </span><a href="#" rel="">Supermarket &amp; Grocery Stores</a></span> <img src="images/share.gif" style="height: 20px; width: 56px;" class="sharebutton"><a class="fav" href="#" rel=""><img src="images/add.gif" style="height: 22px; width: 118px;"></a></li>
+                </ul>
+                <!-- <ul class="pager"><li><a disabled="disabled" class="prev disabled" href="#" rel="">Prev</a></li><li><a class="next" href="#" rel="">Next</a></li></ul> -->
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module featured-partners">
+              <h4>Featured Partners</h4>
+              <ol class="list-unstyled" id="office-partner">
+                <li>&nbsp;</li>
+                <li><a href="#" rel="Reliance Fresh">Reliance Fresh</a></li>
+                <li><a href="#" rel="More">More</a></li>
+                <li><a href="#" rel="Big Bazaar">Big Bazaar</a></li>
+                <li><a href="#" rel="KB">KB's FAIR PRICE</a></li>
+                <li><a href="#" rel="Spencer">Spencer'S</a></li>
+                <li><a href="#" rel="VISHAL MEGA">VISHAL MEGAMART</a></li>
+                <li><a href="#" rel="Big Apple">Big Apple</a></li>
+                <li><a href="#" rel="24*7">24*7</a></li>
+                <li><a href="#" rel="Eoffice">Eoffice Planet India</a></li>
+                <li><a href="#" rel="Eyantra">Eyantra</a></li>
+              </ol>
+              <ol class="list-unstyled" id="courier-partner">
+                <li>&nbsp;</li>
+                <li><a href="#" rel="DHL">DHL Express</a></li>
+                <li><a href="#" rel="Fedex">Fedex</a></li>
+                <li><a href="#" rel="Dhl">Dhl Worldwide Express</a></li>
+                <li><a href="#" rel="Blue Dart">Blue Dart Express</a></li>
+                <li><a href="#" rel="Professional">The Professional Couriers</a></li>
+                <li><a href="#" rel="Courier Express">Courier Express</a></li>
+                <li><a href="#" rel="Ups Jetair">Ups Jetair Express Pvt Ltd</a></li>
+              </ol>
+              <ol class="list-unstyled" id="communication-partner">
+                <li>&nbsp;</li>
+                <li><a href="#" rel="Airtel">Airtel</a></li>
+                <li><a href="#" rel="Vodafone">Vodafone</a></li>
+                <li><a href="#" rel="Idea">Idea</a></li>
+                <li><a href="#" rel="Reliance">Reliance</a></li>
+                <li><a href="#" rel="PayTM">PayTM</a></li>
+                <li><a href="#" rel="epay">EPAY</a></li>
+              </ol>
+              <ol class="list-unstyled" id="utilities-partner">
+                <li>&nbsp;</li>
+                <li><a href="#" rel="BSES">BSES</a></li>
+                <li><a href="#" rel="TATA">TATA POWER</a></li>
+                <li><a href="#" rel="MAHANAGAR">MAHANAGAR GAS</a></li>
+                <li><a href="#" rel="RELIANCE">RELIANCE ENERGY</a></li>
+                <li><a href="#" rel="EPAY">EPAY</a></li>
+                <li><a href="#" rel="LIC">LIC</a></li>
+                <li><a href="#" rel="ICICI">ICICI</a></li>
+                <li><a href="#" rel="HDFC">HDFC</a></li>
+                <li><a href="#" rel="Birla">Birla Sunlife</a></li>
+                <li><a href="#" rel="Metlife">Metlife</a></li>
+              </ol>
+              <ol class="list-unstyled" id="dining-partner">
+                <li>&nbsp;</li>
+                <li><a href="#" rel="CAFE COFFEE DAY">CAFE COFFEE DAY</a></li>
+                <li><a href="#" rel="DOMINOS">DOMINOS</a></li>
+                <li><a href="#" rel="KFC">KFC</a></li>
+                <li><a href="#" rel="PIZZA hut">PIZZA HUT</a></li>
+                <li><a href="#" rel="MCDONALDS">MCDONALDS</a></li>
+                <li><a href="#" rel="BARISTA">BARISTA</a></li>
+                <li><a href="#" rel="COSTA">COSTA COFFEE</a></li>
+                <li><a href="#" rel="SUBWAY">SUBWAY</a></li>
+                <li><a href="#" rel="STARBUCKS">STARBUCKS</a></li>
+                <li><a href="#" rel="HALDIRAM">HALDIRAM</a></li>
+                <li><a href="#" rel="MAINLAND">MAINLAND CHINA</a></li>
+                <li><a href="#" rel="BARBEQUE">BARBEQUE NATION</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="container foo">
+      <div class="categories_foo left"> <b style="margin-left:3%;">Categories</b>
+        <ul class="ulfooter">
+          <li><span class="bold">Supermarkets & Office Supplies:</span> Supermarket chains, individual sellers of household groceries and office supplies, which are not located inside hotels, hospitals or other similar establishments</li>
+          <li><span class="bold">Courier & Shipping:</span> Providers of Courier, parcel delivery, logistics and shipping services.</li>
+          <li><span class="bold">Communication:</span> Providers of landline phones, mobile phones, internet services, cable and other pay TV services, and calling Cards.</li>
+          <li><span class="bold"> Utility & Insurance payments:</span> Providers of electricity, gas, water and insurance.</li>
+          <li><span class="bold">Dining:</span> Standalone Restaurants, Eateries that are individual restaurants or restaurant chains. For a restaurant to be identified it has to be listed and also classified as restaurant partner for American Express.</li>
+          <li style="list-style:none; margin-left:-15px;">The providers listed in the categories above can be government departments and agencies including local, state, municipal organizations; public housing societies and apartment associations.</li>
+        </ul>
+      </div>
+      <div class="categories_foo"> <b>Most Important Terms & Conditions</b>
+        <ul class="ulfooter liststyle" >
+          <li>Only applicable on American Express Corporate Cards from selected Companies. The offer is only on invitation.</li>
+          <li>Minimum spend should be Rs.1000 or more in a single transaction at a listed merchant to qualify for the offer</li>
+          <li>A Cardmember needs to do the following to qualify for one of the offer:
+              <ul style="margin-left: 20px;">
+                  <li>1 Movie Voucher for two worth 700: Purchase at listed merchants in any 2 categories out of the 5 categories in one calendar month to qualify for the offer in that month</li>
+                  <li>2 Movie Vouchers each worth Rs.700: Purchase at listed merchants in at least 3 categories in one calendar month to qualify for this offer in that month.</li>
+              </ul>
+          </li>
+          <li>Only transactions at merchants listed at <a href="http://americanexpress.com/india/movie-offers">http://americanexpress.com/india/movie-offers</a> will qualify as eligible transactions</li>
+          <li>The Bonus offer of IndiGo vouchers is only valid for the 1st month, i.e. valid till 31st July. First 50 Cardmembers to qualify for one of the Movie Ticket offer and are the among the first 50 to spend Rs.2 Lac and above in these categories will get IndiGo vouchers worth Rs.10,000</li>
+          <li>Standard Terms and Conditions apply for Bookmyshow ticket voucher for two.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear"><p></p>&nbsp;&nbsp;</div>
+    <div id="sub-footer"> <a href="faq.html" class="normalppup fancybox.iframe">fAQs</a> | <a  href="tnc.html"  class="normalppup fancybox.iframe">terms & conditions</a></div>
+  </div>
+</div>
+<div id="footer"></div>
+<a href="select-city.html" id="welcome" class="welcome fancybox.iframe"></a> 
+<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script> 
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js" ></script> 
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script> 
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script> 
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
+<script type="text/javascript" src="js/js.js" ></script>
+<div id="fb-root"></div>
+<script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId: '245288508994870',
+                    status: true,
+                    xfbml: true
+                });
+            };
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+</body>
+</html>

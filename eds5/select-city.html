@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Select City</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/font/stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+        <link href="css/css.css" rel="stylesheet" type="text/css">        
+        <!--[if lte IE 8]><script src="css/html5shiv.js"></script><![endif]-->
+    </head>
+    <body>
+        <div>
+            <h2 class="mar10">Select Your City</h2>
+            <div id="citydialog" class="mar10" >
+                <form id="city_form" style="">
+                    <select id="cities">
+                        <option value="">Choose your City</option>
+                       <!--<option value="new delhi">New Delhi</option><option value="mumbai">Mumbai</option><option value="chennai">Chennai</option><option value="kolkata">Kolkata</option><option value="bengaluru">Bengaluru</option><option value="pune">Pune</option><option value="hyderabad">Hyderabad</option><option value="gurgaon">Gurgaon</option><option value="noida">Noida</option><option value="-------------">-------------</option><option value="agartala">Agartala</option><option value="agra">Agra</option><option value="ahmedabad">Ahmedabad</option><option value="ahmednagar">Ahmednagar</option><option value="ajmer">Ajmer</option><option value="aligarh">Aligarh</option><option value="allahabad">Allahabad</option><option value="amaravati">Amaravati</option><option value="ambala">Ambala</option><option value="amritsar">Amritsar</option><option value="amroha">Amroha</option><option value="anand">Anand</option><option value="ankleshwar">Ankleshwar</option><option value="arasikere">Arasikere</option><option value="asansol">Asansol</option><option value="aurangabad">Aurangabad</option><option value="balachur">Balachur</option><option value="banaswadi">Banaswadi</option><option value="bantala">Bantala</option><option value="bareilly">Bareilly</option><option value="baroadez">Baroadez</option><option value="baroda">Baroda</option><option value="bathinda">Bathinda</option><option value="bawal">Bawal</option><option value="beas">Beas</option><option value="belgaum">Belgaum</option><option value="benaulim">Benaulim</option><option value="bengaluru">Bengaluru</option><option value="bharuch">Bharuch</option><option value="bhatinda">Bhatinda</option><option value="bhavnagar">Bhavnagar</option><option value="bhilai">Bhilai</option><option value="bhiwadi">Bhiwadi</option><option value="bhopal">Bhopal</option><option value="bhubaneswar">Bhubaneswar</option><option value="bilaspur">Bilaspur</option><option value="buroadwan">Buroadwan</option><option value="calangute">Calangute</option><option value="calicut">Calicut</option><option value="chandigarh">Chandigarh</option><option value="chandragiri">Chandragiri</option><option value="channapatana">Channapatana</option><option value="chengalpet">Chengalpet</option><option value="chennai">Chennai</option><option value="chittor">Chittor</option><option value="cochin">Cochin</option><option value="coimbatore">Coimbatore</option><option value="coonoor">Coonoor</option><option value="cuttack">Cuttack</option><option value="darjeeling">Darjeeling</option><option value="dasuya">Dasuya</option><option value="davangere">Davangere</option><option value="dehradun">Dehradun</option><option value="dhanbad">Dhanbad</option><option value="durgapur">Durgapur</option><option value="erode">Erode</option><option value="faridabad">Faridabad</option><option value="gajraula">Gajraula</option><option value="gandhinagar">Gandhinagar</option><option value="gangtok">Gangtok</option><option value="ghaziabad">Ghaziabad</option><option value="goa">Goa</option><option value="greater mumbai">Greater Mumbai</option><option value="greater noida">Greater Noida</option><option value="gundulpet">Gundulpet</option><option value="guntur">Guntur</option><option value="gurgaon">Gurgaon</option><option value="guwahati">Guwahati</option><option value="gwalior">Gwalior</option><option value="haldwani">Haldwani</option><option value="haridwar">Haridwar</option><option value="hooghly">Hooghly</option><option value="hoshiarpur">Hoshiarpur</option><option value="hosur">Hosur</option><option value="howrah">Howrah</option><option value="hubli">Hubli</option><option value="hyderabad">Hyderabad</option><option value="indore">Indore</option><option value="jabalpur">Jabalpur</option><option value="jaipur">Jaipur</option><option value="jalandhar">Jalandhar</option><option value="jallandhar">Jallandhar</option><option value="jammu">Jammu</option><option value="jamnagar">Jamnagar</option><option value="jamshedpur">Jamshedpur</option><option value="jodhpur">Jodhpur</option><option value="k.v.rangareddy">K.V.Rangareddy</option><option value="kanchipuram">Kanchipuram</option><option value="kannur">Kannur</option><option value="kanpur">Kanpur</option><option value="karjan">Karjan</option><option value="karnal">Karnal</option><option value="katra">Katra</option><option value="kharagpur">Kharagpur</option><option value="kharar">Kharar</option><option value="kolar">Kolar</option><option value="kolhapur">Kolhapur</option><option value="kolkata">Kolkata</option><option value="kollam">Kollam</option><option value="koluthur">Koluthur</option><option value="kormangla">Kormangla</option><option value="kota">Kota</option><option value="kottayam">Kottayam</option><option value="kurukshetra">Kurukshetra</option><option value="kushalanagar">Kushalanagar</option><option value="lavasa">Lavasa</option><option value="lekkidi">Lekkidi</option><option value="lonavala">Lonavala</option><option value="loni">Loni</option><option value="lucknow">Lucknow</option><option value="ludhiana">Ludhiana</option><option value="macleodganj">Macleodganj</option><option value="maddur">Maddur</option><option value="madurai">Madurai</option><option value="mahabalipuram">Mahabalipuram</option><option value="maharashtra">Maharashtra</option><option value="mahim">Mahim</option><option value="malappuram">Malappuram</option><option value="mandya">Mandya</option><option value="mangalore">Mangalore</option><option value="mangaon">Mangaon</option><option value="manipal">Manipal</option><option value="mathura">Mathura</option><option value="meerut">Meerut</option><option value="memnagar">Memnagar</option><option value="miraj">Miraj</option><option value="moga">Moga</option><option value="mohali">Mohali</option><option value="moradabad">Moradabad</option><option value="mount abu">Mount Abu</option><option value="mumbai">Mumbai</option><option value="muradabad">Muradabad</option><option value="mussorie">Mussorie</option><option value="muthukadu">Muthukadu</option><option value="mysore">Mysore</option><option value="nagpur">Nagpur</option><option value="naika">Naika</option><option value="nainital">Nainital</option><option value="narasapura">Narasapura</option><option value="nasik">Nasik</option><option value="navasri">Navasri</option><option value="navi mumbai">Navi Mumbai</option><option value="navsari">Navsari</option><option value="nawashahr">Nawashahr</option><option value="nellore">Nellore</option><option value="new delhi">New Delhi</option><option value="noida">Noida</option><option value="palakkad">Palakkad</option><option value="palampur">Palampur</option><option value="palwal">Palwal</option><option value="panaji">Panaji</option><option value="panchkula">Panchkula</option><option value="panipat">Panipat</option><option value="panvel">Panvel</option><option value="parganas">Parganas</option><option value="pathankot">Pathankot</option><option value="patiala">Patiala</option><option value="patna">Patna</option><option value="pattom">Pattom</option><option value="phagwara">Phagwara</option><option value="pondicherry">Pondicherry</option><option value="punchkulla">Punchkulla</option><option value="pune">Pune</option><option value="puri">Puri</option><option value="raigad">Raigad</option><option value="raipur">Raipur</option><option value="rajkot">Rajkot</option><option value="rajpura">Rajpura</option><option value="ranchi">Ranchi</option><option value="rewari">Rewari</option><option value="rishikesh">Rishikesh</option><option value="rohtak">Rohtak</option><option value="roorkee">Roorkee</option><option value="rourkela">Rourkela</option><option value="rudrapur">Rudrapur</option><option value="rupangr">Rupangr</option><option value="saharanpur">Saharanpur</option><option value="sambalpur">Sambalpur</option><option value="sangamner">Sangamner</option><option value="sangli">Sangli</option><option value="satara">Satara</option><option value="secunderabad">Secunderabad</option><option value="shillong">Shillong</option><option value="shimla">Shimla</option><option value="shivkhedapur">Shivkhedapur</option><option value="siliguri">Siliguri</option><option value="solan">Solan</option><option value="sonipat">Sonipat</option><option value="srinagar">Srinagar</option><option value="surat">Surat</option><option value="suryapet">Suryapet</option><option value="tamil nadu">Tamil Nadu</option><option value="tanda">Tanda</option><option value="thane">Thane</option><option value="thirupur">Thirupur</option><option value="thiruvananthapuram">Thiruvananthapuram</option><option value="thrissur">Thrissur</option><option value="tiruchirappalli">Tiruchirappalli</option><option value="tirupathi">Tirupathi</option><option value="tirupur">Tirupur</option><option value="tiruvananthapuram">Tiruvananthapuram</option><option value="trichy">Trichy</option><option value="trissur">Trissur</option><option value="trivandrum">Trivandrum</option><option value="tumkur">Tumkur</option><option value="udaipur">Udaipur</option><option value="vadodara">Vadodara</option><option value="vapi">Vapi</option><option value="varanasi">Varanasi</option><option value="vellore">Vellore</option><option value="vijayawada">Vijayawada</option><option value="vishakapatnam">Vishakapatnam</option><option value="vizag">Vizag</option><option value="warangal">Warangal</option><option value="yamuna nagar">Yamuna Nagar</option><option value="yermal">Yermal</option><option value="zirakhpur">Zirakhpur</option>-->
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="bengaluru">Bengaluru</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="delhi">Delhi/NCR</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="pune">Pune</option>
+                            <option value="surat">Surat</option>
+                            <option value="">--------------------------</option>
+                            <option value="andhra">Andhra Pradesh</option>
+                            <option value="bihar">Bihar</option>
+                            <option value="chandigarh">Chandigarh</option>
+                            <option value="chhattisgarh">Chhattisgarh</option>
+                            <option value="goa">Goa</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="haryana">Haryana</option>
+                            <option value="jammu">Jammu & Kashmir</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="madhya">Madhya Pradesh</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="orissa">Orissa</option>
+                            <option value="pondicherry">Pondicherry</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="rajasthan">Rajasthan</option>
+                            <option value="Tamil">Tamil Nadu</option>
+                            <option value="uttar">Uttar Pradesh</option>
+                            <option value="uttaranchal">Uttaranchal</option>
+                            <option value="bengal">West Bengal</option>
+                            <!-- <option value="others">Others</option>  -->
+                            </select>
+                    <input type="submit" id="city_btn" value="Select">
+                </form>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+        <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js" ></script>
+        <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>        
+        <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/js.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{font-family:Arial, Helvetica, sans-serif;background:#dfe2e3}
+.wrapper {width:960px; height:auto; background:url(../images/bg.jpg) no-repeat; margin:auto;}
+.line {background:url(../images/line.png) repeat-x center 505px ; margin:auto;}
+.logo {width:200px; height:40px; float:left; margin:20px;}
+.american_express {float:right; margin:19px 30px; height:40px;}
+.clear{clear:both;}
+.hidden{display: none}
+.movie {width:260px;  margin:96px 30px 0px 70px; float:left; float:left;}
+.movie_2 {width:175px;  margin:46px 30px 0px 70px; float:left; float:left;}
+h1 {font-size:37px; color:#00a5be; line-height:30px; font-weight:lighter;  font-family:'bentonsansbook';  }
+h2 {font-size:26px; color:#00a5be; line-height:30px; font-weight:lighter; margin-top:126px;  }
+h3 {font-size:24px; color:#283070; line-height:30px; font-weight:lighter; margin-top:20px; font-family:'bentonsansbook'; }
+.mar10{margin: 10px;font-size: 14px;}
+
+.container-topmenu{margin:10px 30px 0 23px}
+.pull-left{float: left; margin-left:20px;}
+.pull-right{float: right;margin-top: 25px;}
+.fav input[type=button] {width: 104px;cursor: pointer;border: none;height: 31px;float: left;background: url(../images/my.png) no-repeat;display: block;}
+.display{text-transform: capitalize;float: left;margin-top: 3px;padding-right: 5px;}
+.filter{float: right}
+
+#city_btn, .delbtn {color: #fff;margin: 0 0 0 10px;background: #ed1c24;padding: 8px;border-radius: 3px;border: none;}
+#cities {font-family:'bentonsansbook';padding: 4px;width: 245px;float: left;height: 37px;color: #000;}
+
+/*#menu-dd{list-style: none;margin: 0;padding: 0;background:#00A2BC; font-family:'bentonsansbook';padding:20px;width:500px;}
+#menu-dd li{background:url('../images/airplane.jpg') no-repeat;color:#FFF;list-style: none;padding:0 0 12px 42px;margin: 0;}
+#menu-dd1{list-style: none;margin: 0;padding: 0;background:#00A2BC; font-family:'bentonsansbook';padding:20px;width:500px;}
+#menu-dd1 li{background:url('../images/rel.png') no-repeat;color:#FFF;list-style: none;padding:0 0 12px 42px;margin: 0;}
+.cinema-menu{position: absolute;top:82px;display: none;}*/
+
+.contain {width:565px; float:left; margin-top:57px; }
+.menu_bar, .categories  {margin-left:-90px;}
+.tottel_list {margin:1em 0 0 0;}
+.movie_voucher {width:60px; height:60px;font-size:12px; margin-top:20px; float:left;}
+.movie_text { height:20px; float:left; font-size:11px; color:#29326d; margin-top:45px; font-weight:bold; width:205px;}
+.movie_text a{color:#29326d;text-decoration: none;}
+.movie_text a:hover{text-decoration: underline}
+.box {width:280px; height:50px; float:left;position: relative; background:#666;}
+/*.box:hover .cinema-menu{display: block} */
+.menu { width:600px; margin:7em 0 0 0 ; }
+.menu li{ float:left; margin:0px 0.3em 0px 1px;}
+.menu li img{cursor: pointer;background: #FFF;border-radius: 4px;-webkit-border-radius:10px;}
+.menu li img:hover{background:#ffcb08}
+
+/*landing pages css8*/
+.header_contain {width:800px; height:150px;  margin:auto; }
+.movie_small {float:left; width:200px; margin:0px 0px;}
+.movie_small img{width: 144px;}
+.categories {font-size:18px; color:#00a5be; float:left; line-height:20px;margin-top:0px;}
+.menu_bar { width:600px; float:left; }
+.menu_bar li{ float:left; margin:20px 0.3em 0px 1px;}
+.menu_bar li img{cursor: pointer;background: #FFF;border-radius: 4px;-webkit-border-radius:10px;}
+.menu_bar li img:hover, .menu_bar li img.active{background:#ffcb08}
+
+
+#sub-footer{text-transform: capitalize;font-family:'bentonsansbook';width:960px;margin: 0 auto;text-align: right;color: #00a5be;padding:0 66px 10px 0px;font-size: 10px;}
+#sub-footer a{color: #00a5be;}
+#footer{width:100%; height:31px; background:url(../images/filgree.png); }
+
+.categories_foo {width:450px; float:left;font-size:13px;margin:2em 0 0 0;}
+.categories_foo > b { font-size:16px; line-height:normal;font-weight:bold; color:#00A5BE;}
+.categories_foo ul li > b {font-size:14px;}
+.left {margin-right:30px;}
+.categories_foo ul li {padding:0.3em 0; line-height:20px;}
+.foo {padding:1em 1em; border-top:3px dotted #fff; margin:2.5em 0 0 0;}
+.foo p {padding:0.3em 0; line-height:20px;}
+.liststyle li {list-style:outside;} 
+
+.blog-sidebar {position:absolute; right:50px; top:50px;}
+.container {position:relative;}
+
+.ticket_and_movie {margin:5em 0 0 0px; padding:0px;}
+.ticket_and_movie li {margin:0px; padding:0px; display:inline-block; width:48%;background:#29336e; margin-right:2%; vertical-align:top;}
+.tick_movi_icon {margin:-2em 0.5em 0 0.5em;width: 58px;float: left;}
+.ticket_and_movie h4 {color:#2FD1E9; margin:1em 0 0 1em; line-height:normal; height:30px; font-weight:bold; font-size:13px;}
+.bull_copy { color:#FFF; font-size:12px; display:block; clear:both; padding:0.5em 1em; height:130px;}
+.bull_copy li {width:90%; display:list-item; list-style:outside; margin:0.5em 0 0 1.5em;line-height: 14px;font-size: 12px; }
+.bold {font-weight:bold !important;}
